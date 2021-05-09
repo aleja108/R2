@@ -1,0 +1,95 @@
+body{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.main{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-cartoon-minimalist-movie-background-illustration-image_189192.jpg);
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: rgb(241, 246, 247);
+    overflow-y: scroll;
+    font-size: 24px;
+}
+.main::after{
+    content: "";
+    background-color: rgb(16, 95, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main >h1,
+.main >p{
+text-align:center;
+font: family 35px;
+z-index: 2;
+position: relative;
+}
+
+.contenido-principal{
+    background-color: rgba(82, 47, 165, 0.521);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 5px rgb(126, 26, 126);
+}
+.form-content{
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: rgba(221, 25, 195, 0.849);
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=nombre],
+label[for=email],
+label[for=telefono],
+label[for=dirección],
+label[for=comentario]
+label[for=seleccione]{
+margin: bottom 10px;
+display: inline-block;
+}
+
+
+.comentario { 
+min-height: 100px;
+}
+
+label[for=comentario]{
+margin: top 30px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: rgb(212, 21, 21);
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: rgb(252, 249, 249);
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: #1da11f;
+}
+
+.btn:active{
+    background-color: #29962a;
+S}
+

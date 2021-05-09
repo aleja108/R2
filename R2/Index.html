@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO ENCUESTA</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+   <div class="main">
+       <h1 id="title">Encuesta de validación</h1>
+       <p id= "description">
+           Bienvenido a nuestro sitio web,favor diligenciar el siguiente formulario.
+          
+    
+       </p>
+       <div class="contenido-principal">
+           <div class="form-content"></div>
+           <form id="Encuesta-form">
+               <br>
+               <label for="nombre" id="nombre">Nombre</label>
+               <input id="nombre"type="text"required placeholder="Ingrese su nombre">
+               <br>
+               <label for="email" id="email">Email</label>
+               <input id="email"type="email"required placeholder="Ingrese su correo electronico">
+               <br>
+               
+               <label for="number" id="number">Telefono</label>
+               <input id="nombre"type="number"required placeholder="Ingrese su telefono">
+               <br>
+
+               <label for="number" id="number">Dirección</label>
+               <input id="nombre"type="number"required placeholder="Ingrese su dirección">
+
+               <br>
+               <label for="number" id="number-label">Ingrese su estrato de 1 al 6</label>
+               <input id="number"type="number" min= "1" max="6"required placeholder="Ingrese su estrato">
+               <br>
+               <label for="Seleccione">¿Que le gusta hacer  en su tiempo libre?</label>
+                <select id="Seleccione">
+                    <option value="Leer">Leer</option>
+                    <option value="Salir de viaje">Salir de viaje</option>
+                    <option value="Bailar">Bailar</option>
+                    <option value="Ir al gym">ir al gym</option>
+                    <option value="Dormir">Dormir</option>
+                    <option value="Otro">Otro</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                    <fieldset>
+                        <legend>¿Recomendarías nuestros cursos?</legend>
+                        <br>
+                        <input type="radio" nombre="Recomendado" id="por-supuesto" value="por supuesto"/><label for="por supuesto">Por supuesto</label><br/>
+                        
+                        <input type="radio"nombre="accion" id="talvez" value="talvez"  /><label for="talvez">Talvez</label><br/>                    
+                        <input type="radio"nombre="accion" id="claro-que-no" value="claro-que-no"/><label for="claro-que-no">Claro que no</label>
+                       </fieldset>
+                     <p>¿Que tipo de cursos te gustaría ver?</p>
+                     <br>
+                     <input type="checkbox"id="Artes" nombre="Artes" value="artes">
+                     <label for="artes">Artes</label>
+                     <br>
+                     <input type="checkbox"id="instrumentales" nombre="instrumentales" value="instrumentales">
+                     <label for="instrumentales">Instrumentales</label>
+                     <br>
+                     <input type="checkbox"id="Deportivos" nombre="Deportivos" value="deportivos">
+                     <label for="deportivos">Deportivos</label><br>
+
+                     <label for="comentario">Alguna observación o sugerencia</label>
+                     <textarea name="Ingresa tus observaciones" id="comentario" cols="30" rows="10">Ingresa tus comentarios..</textarea> <br>
+
+                     <input type="submit" id="btn" class="btn"
+                     value="Enviar" 
+                     onclick="recibirDatos(event, formulario)">
+                    </form>       
+        </div>
+
+  
+    </div>
+</body>
+</html>
